@@ -1,0 +1,142 @@
+@import "../../styles/mixins.scss";
+
+.header {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 15px;
+  background-color: rgb(40, 176, 152);
+  box-shadow: 0 1px 4px rgb(38, 37, 37), -23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 15px;
+
+    .localStorage-block {
+      margin-left: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 200px;
+      > button {
+        width: 100px;
+        height: 30px;
+        background: #8cd5c7;
+        border: none;
+        border-radius: 5px;
+        color: #63717f;
+
+        -webkit-transition: all 0.55s ease;
+        -moz-transition: all 0.55s ease;
+        -ms-transition: all 0.55s ease;
+        -o-transition: all 0.55s ease;
+        transition: all 0.55s ease;
+      }
+      .btn-save {
+        margin-bottom: 10px;
+      }
+
+      .btn-save:hover {
+        background: white;
+      }
+
+      .btn-delete:hover {
+        background: white;
+      }
+    }
+    .box {
+      width: 300px;
+      height: 50px;
+    }
+    .container {
+      overflow: hidden;
+      width: 300px;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .container input#search {
+      width: 300px;
+      height: 50px;
+      background: #8cd5c7;
+      border: none;
+      font-size: 10pt;
+      float: left;
+      color: #63717f;
+      padding-left: 45px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+
+      //Создание мягкого перехода
+      -webkit-transition: background 0.55s ease;
+      -moz-transition: background 0.55s ease;
+      -ms-transition: background 0.55s ease;
+      -o-transition: background 0.55s ease;
+      transition: background 0.55s ease;
+    }
+
+    .container input#search::-webkit-input-placeholder {
+      color: #65737e;
+    }
+
+    .container input#search:-moz-placeholder {
+      /* Firefox 18- */
+      color: #65737e;
+    }
+
+    .container input#search::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #65737e;
+    }
+
+    .container input#search:-ms-input-placeholder {
+      color: #65737e;
+    }
+
+    .container input#search:hover,
+    .container input#search:focus,
+    .container input#search:active {
+      outline: none; /* Избавиться от жёлтого или синего свечения вокруг входа*/
+      background: #ffffff;
+    }
+
+    .container button {
+      -webkit-border-top-right-radius: 5px;
+      -webkit-border-bottom-right-radius: 5px;
+      -moz-border-radius-topright: 5px;
+      -moz-border-radius-bottomright: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+      border: none;
+      background: #232833;
+      height: 50px;
+      width: 50px;
+      color: #4f5b66;
+      opacity: 0;
+      font-size: 10pt;
+
+      -webkit-transition: all 0.55s ease;
+      -moz-transition: all 0.55s ease;
+      -ms-transition: all 0.55s ease;
+      -o-transition: all 0.55s ease;
+      transition: all 0.55s ease;
+    }
+
+    .container:hover button,
+    .container:active button,
+    .container:focus button {
+      outline: none;
+      opacity: 1;
+      margin-left: -50px;
+    }
+
+    .container:hover button:hover {
+      background: white;
+    }
+  }
+}

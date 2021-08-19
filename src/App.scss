@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.app{
+    &__wrapper{
+        width: 1200px;
+        margin: 0 auto;        
+    }
+}

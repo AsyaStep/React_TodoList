@@ -1,0 +1,29 @@
+@import "../../../styles/mixins.scss";
+
+.modal-delete{
+  height: 100px;
+    @include centeringPosition();
+    @include modalContainer();
+
+    &__content{
+        @include flexCenter;
+        padding: 15px;        
+    }
+    &__btns{
+        @include flexCenter;
+        @include modalButton();
+        
+    } 
+    &__close {
+        margin-left: 10px;
+      }
+    
+      &__remove:hover {
+        background: white;
+      }
+    
+      &__close:hover {
+        background: white;
+      }
+
+}

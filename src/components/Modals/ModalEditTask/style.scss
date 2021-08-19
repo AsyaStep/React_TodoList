@@ -1,0 +1,30 @@
+@import "../../../styles/mixins.scss";
+
+.modal-edit {
+    height: 200px;
+  @include centeringPosition();
+  @include modalContainer();
+
+  @include modalInput();
+
+  &__btns {
+    @include flexEnd();
+    margin-top: 15px;
+  }
+
+  &__close {
+    margin-left: 10px;
+  }
+
+  &__edit:hover {
+    background: white;
+  }
+
+  &__close:hover {
+    background: white;
+  }
+
+  @include modalButton();
+}
+
+@include modalSpan();
